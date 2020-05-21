@@ -76,8 +76,8 @@ class SchedularyController extends Controller
     public function update(Request $request,$schedulary)
     {
         $rules =[
-            'dateStart' => 'required|date_format:Y-m-d',
-            'dateEnd' => 'required|date_format:Y-m-d',
+            'dateStart' => 'date_format:Y-m-d',
+            'dateEnd' => 'date_format:Y-m-d',
             'report_id' => 'required|integer|min:1',
             'item_id' => 'required|integer|min:1',
         ];

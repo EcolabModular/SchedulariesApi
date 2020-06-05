@@ -28,7 +28,7 @@ class SchedularyController extends Controller
     public function index()
     {
         $Schedularies = Schedulary::all();
-        return $this->successResponse($Schedularies);
+        return $this->showAll($Schedularies);
     }
     /**
      * Creates an instance of Schedulary$Schedulary
@@ -65,7 +65,7 @@ class SchedularyController extends Controller
     {
         $Schedulary = Schedulary::where('item_id',$item)->get();
 
-        return $this->successResponse($Schedulary);
+        return $this->showAll($Schedulary);
     }
 
     /**

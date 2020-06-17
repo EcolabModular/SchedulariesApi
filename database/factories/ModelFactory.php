@@ -17,6 +17,7 @@ use Faker\Generator as Faker;
 */
 
 $factory->define(Schedulary::class, function (Faker $faker) {
+
     return [
         'dateStart' => $faker->date($format = 'Y-m-d', $max = 'now'), // '1979-06-09'
         'dateEnd' => $faker->date($format = 'Y-m-d', $max = 'now'),

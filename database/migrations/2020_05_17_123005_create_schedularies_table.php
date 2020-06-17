@@ -15,8 +15,8 @@ class CreateSchedulariesTable extends Migration
     {
         Schema::create('schedularies', function (Blueprint $table) {
             $table->id();
-            $table->date('dateStart');
-            $table->date('dateEnd');
+            $table->dateTime('dateStart');
+            $table->dateTime('dateEnd');
             $table->integer('report_id')->unsigned();
             $table->integer('item_id')->unsigned();
             $table->timestamps();

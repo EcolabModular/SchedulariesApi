@@ -12,6 +12,6 @@ class Schedulary extends Model
      * @var array
      */
     protected $fillable = [
-        'dateStart', 'dateEnd','status','report_id','item_id'
+        'dateStart', 'dateEnd','report_id','item_id'
     ];
 }
